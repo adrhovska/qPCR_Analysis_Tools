@@ -205,27 +205,6 @@ Run `python qpcr_pipeline.py --help` for the full argument list.
 | `--dpi` | `150` | Plot resolution. |
 | `--outdir` (required) | — | Output folder (created if missing). |
 
-## Output structure
-
-```
-<outdir>/
-├── run.log
-├── tables/
-│   ├── technical_replicates_QC.csv
-│   ├── sample_target_Cq_summary.csv
-│   ├── ddCt_RQ_log2FC_results.csv        (only if --anchor given)
-│   ├── statistics_posthoc.csv            (only if --anchor given)
-│   └── statistics_report.txt             (only if --anchor given)
-└── plots/
-    ├── qc/
-    ├── cq/
-    ├── log2fc/                           (only if --anchor given)
-    │   ├── log2FC_<target>.png           (one per target)
-    │   └── log2FC_all_targets.png        (all targets side by side)
-    └── rq/                               (only if --anchor given)
-        ├── RQ_<target>.png               (one per target)
-        └── RQ_all_targets.png            (all targets side by side)
-```
 
 ## Dependencies
 
